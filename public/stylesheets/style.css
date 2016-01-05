@@ -1,0 +1,160 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+* {
+  padding:0;
+  margin:0;
+}
+
+html, body {
+  height:100%;
+}
+
+.skrollr-desktop body {
+  height:100% !important;
+}
+
+body {
+  font-size: 1.4em;
+  color: #545454;
+  font-family: 'Roboto', sans-serif;
+}
+
+p {
+  margin:1em 0;
+}
+
+.parallax-image-wrapper {
+  position:fixed;
+  left:0;
+  width:100%;
+  overflow:hidden;
+}
+
+.parallax-image-wrapper-50 {
+  height:50%;
+  top:-50%;
+}
+
+.parallax-image-wrapper-100 {
+  height:100%;
+  top:-100%;
+}
+
+.parallax-image {
+  display:none;
+  position:absolute;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-repeat:no-repeat;
+  background-position:center;
+  background-size:cover;
+}
+
+.parallax-image-50 {
+  height:200%;
+  top:-50%;
+}
+
+.parallax-image-100 {
+  height:100%;
+  top:0;
+}
+
+.parallax-image.skrollable-between {
+  display:block;
+}
+
+.no-skrollr .parallax-image-wrapper {
+  display:none !important;
+}
+
+#skrollr-body {
+  height:100%;
+  overflow:visible;
+  position:relative;
+}
+
+.gap {
+  background:transparent center no-repeat;
+  background-size:cover;
+}
+
+.skrollr .gap {
+  background:transparent !important;
+}
+
+.gap-50 {
+  height:50%;
+}
+
+.gap-100 {
+  height:100%;
+}
+
+.header, .content {
+  background:#fff;
+  padding:1em;
+
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  box-sizing:border-box;
+}
+
+.content-full {
+  height:100%;
+}
+
+#menu {
+  position: fixed;
+  background-color: transparent;
+  border-top: #0973ba 0.3em solid;
+  width: 100%;
+  z-index: 9999;
+  top: 0px;
+}
+
+#menu > img {
+  height: 3em;
+  margin: 0em 2em;
+  display: inline;
+  float: left;
+}
+
+nav > a {
+  display: inline-block;
+  float: left;
+  width: 14%;
+  padding-top:1.2em;
+  color: #0973ba;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+  transition: all 0.2s;
+}
+
+nav > a:hover {
+  color: #0973ba;
+  padding-bottom:0.5em;
+  border-bottom-right-radius: 0.5em;
+  border-bottom-left-radius: 0.5em;
+  border-top: 4px solid #0973ba;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+.footer {
+  margin:0;
+  padding:0;
+  overflow:hidden;
+  background-color: #ededed;
+  text-align: center;
+}
+
+#skrollr-body {
+  margin-top:3em;
+}
+
+
