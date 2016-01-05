@@ -1,5 +1,12 @@
 #!/usr/bin/env node
 
+'use strict';
+
+require('babel/register')({
+    stage: 0
+});
+
+
 /**
  * Module dependencies.
  */
