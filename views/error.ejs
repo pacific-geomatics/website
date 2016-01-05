@@ -1,7 +1,9 @@
-<% include 'partials/header' %>
+<% include partials/header %>
 
-  <h1><%= message %>
+<div class="error_message">
+  <h1><%= message %></h1>
   <h2><%= error.status %></h2>
   <pre><%= error.stack %></pre>
+</div>
 
-<% include 'partials/footer' %>
+<% include partials/footer %>
