@@ -114,38 +114,25 @@ p {
   top: 0px;
 }
 
-#menu > img {
-  height: 3em;
-  margin: 0em 2em;
-  display: inline;
-  float: left;
+#logo {
+  display: none;
+  visibility: hidden;
 }
 
 nav > a {
   display: inline-block;
-  float: left;
-  width: 14%;
-  padding-top:1.2em;
   color: #0973ba;
+  font-size: 0.7em;
+  padding: 0.2em;
   font-weight: bold;
   text-decoration: none;
   text-align: center;
   cursor: pointer;
-  -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
-  transition: all 0.2s;
 }
 
-nav > a:hover {
-  color: #0973ba;
-  padding-bottom:0.5em;
-  border-bottom-right-radius: 0.5em;
-  border-bottom-left-radius: 0.5em;
-  border-top: 4px solid #0973ba;
-  font-weight: normal;
-  text-decoration: none;
-}
 
 .footer {
+  font-size: 0.6em;
   margin:0;
   padding:0;
   overflow:hidden;
@@ -160,4 +147,47 @@ nav > a:hover {
 .error_message {
   margin-top:4em;
   padding:2em;
+}
+
+
+
+@media screen and (min-width: 40.5em) {
+
+  #logo {
+    background-image: url('../images/logo.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 3em;
+    width: 8em;
+    margin: 0em 2em;
+    display: inline-block;
+    visibility: visible;
+    float: left;
+  }
+
+  nav > a {
+    display: inline-block;
+    float: left;
+    width: 14%;
+    padding-top:1.2em;
+    font-size: 1em;
+    color: #0973ba;
+    font-weight: bold;
+    text-decoration: none;
+    text-align: center;
+    cursor: pointer;
+    -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
+    transition: all 0.2s;
+  }
+
+  nav > a:hover {
+    color: #0973ba;
+    padding-bottom:0.5em;
+    border-bottom-right-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    border-top: 4px solid #0973ba;
+    font-weight: normal;
+    text-decoration: none;
+  }
+
 }
