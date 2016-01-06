@@ -5,3 +5,7 @@ exports.index = (req, res, next) => {
 exports.simulation = (req, res, next) => {
   res.render('simulation', { title: 'Express' });
 };
+
+exports.contact = (req, res, next) => {
+  res.render('contact', { title: 'Express' });
+};

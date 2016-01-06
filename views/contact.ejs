@@ -1,0 +1,26 @@
+<% include partials/header %>
+
+  <div class="contact">
+
+    <p class="contact_details">
+    Phone: <a href="tel:604-372-3300">604-372-3300</a> Email: <a href="mailto:info@pacgeo.com">info@pacgeo.com</a>
+    </p>
+
+  <div id="map"></div>
+  </div>
+  <div class="footer">
+    <p>© Copyright 2015 Pacific Geomatics Ltd.</p>
+  </div>
+
+<link rel="stylesheet" href="stylesheets/leaflet.css" />
+<script type="text/javascript" src="javascripts/leaflet.js"></script>
+<script type="text/javascript">
+  map = new L.Map('map', {zoomControl:false});
+  var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+  var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
+  var osm = new L.TileLayer(osmUrl, { attribution: osmAttrib});
+  map.dragging.disable();
+  map.setView(new L.LatLng(49.099009, -122.708538), 18);
+  map.addLayer(osm);
+</script>
+<% include partials/footer %>

@@ -160,6 +160,19 @@ nav > a {
 }
 
 
+#map {
+  height: 80vh;
+}
+
+.contact {
+  margin-top: 5em;
+  height: 100%;
+  font-size: 0.8em;
+}
+
+.contact_details {
+  text-align: center;
+}
 
 @media screen and (min-width: 40.5em) {
 
