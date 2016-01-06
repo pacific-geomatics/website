@@ -1,4 +1,14 @@
-@import url(https://fonts.googleapis.com/css?family=Roboto);
+@font-face {
+    font-family: 'robotoregular';
+    src: url('fonts/roboto-regular-webfont.eot');
+    src: url('fonts/roboto-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/roboto-regular-webfont.woff2') format('woff2'),
+         url('fonts/roboto-regular-webfont.woff') format('woff'),
+         url('fonts/roboto-regular-webfont.ttf') format('truetype'),
+         url('fonts/roboto-regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
   padding:0;
@@ -16,7 +26,7 @@ html, body {
 body {
   font-size: 1.4em;
   color: #545454;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'robotoregular', sans-serif;
 }
 
 p {
