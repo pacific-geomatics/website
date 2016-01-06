@@ -2,10 +2,7 @@
 
 'use strict';
 
-require('babel/register')({
-    stage: 0
-});
-
+require('babel-register')({"presets": ["stage-0", "es2015"]})
 
 /**
  * Module dependencies.
