@@ -4,8 +4,7 @@ import favicon from 'serve-favicon';
 import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
-
-import routes from './routes/index';
+import routes from './routes';
 
 let app = express();
 
@@ -23,7 +22,8 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', routes);
+app.use('/simulation', routes.simulation);
+app.use('/', routes.index);
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
