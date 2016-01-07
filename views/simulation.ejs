@@ -48,6 +48,21 @@
     ></div>
 </div>
 
+<div
+  class="parallax-image-wrapper parallax-image-wrapper-100"
+  data-anchor-target="#runway_before + .gap"
+  data-bottom-top="transform:translate3d(0px, 200%, 0px)"
+  data-top-bottom="transform:translate3d(0px, 0%, 0px)">
+
+  <div
+    class="parallax-image parallax-image-100"
+    style="background-image:url(images/runway_before.gif)"
+    data-anchor-target="#runway_before + .gap"
+    data-bottom-top="transform: translate3d(0px, -80%, 0px);"
+    data-top-bottom="transform: translate3d(0px, 80%, 0px);"
+    ></div>
+</div>
+
 <div id="skrollr-body">
   <div class="header" id="simulation_intro">
     <h3>Simulation</h3>
@@ -81,6 +96,12 @@
       create the best seamless image dataset possible.
     </p>
 
+  </div>
+  <div class="gap gap-100"></div>
+  <div id="singapore_before"></div>
+  <div id="singapore_after"></div>
+  <div class="gap gap-100"></div>
+  <div class="content">
     <p>
       We match both the position and color of our imagery to a
       client’s pre-existing data. We layer multiple dates to patch
@@ -93,10 +114,17 @@
       blend color and resolution to provide a seamless transition
       between high and low resolution data sets.
     </p>
+    <h3>Positioning</h3>
+    <p>
+
+      As a final step we correctly position all elements in the dataset.
+      Corrections of this sort are small, but critical to ensure that
+      reflexes trained in the simulator are not subtly off leading to
+      real world accidents.
+    </p>
+
   </div>
-  <div class="gap gap-100"></div>
-  <div id="singapore_before"></div>
-  <div id="singapore_after"></div>
+  <div id="runway_before"></div>
   <div class="gap gap-100"></div>
   <div class="content" id="done">
 
