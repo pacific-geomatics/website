@@ -229,8 +229,8 @@ h3 {
     text-decoration: none;
     text-align: center;
     cursor: pointer;
-    -webkit-transition: all 0.5s; /* Safari 3.1 to 6.0 */
-    transition: all 0.2s;
+    -webkit-transition: all 0.1s; /* Safari 3.1 to 6.0 */
+    transition: all 0.1s;
   }
 
   nav > a:hover {
@@ -238,8 +238,7 @@ h3 {
     padding-bottom:0.5em;
     border-bottom-right-radius: 0.5em;
     border-bottom-left-radius: 0.5em;
-    border-top: 4px solid #0973ba;
-    font-weight: normal;
+    border-top: 4px solid #b5b5b6;
     text-decoration: none;
   }
 
