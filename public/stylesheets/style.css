@@ -171,7 +171,21 @@ nav > a {
 }
 
 .contact_details {
+  vertical-align:bottom;
   text-align: center;
+}
+
+.iron_icon {
+  fill: #0973ba;
+  display: inline;
+  width: 1em;
+  height: 1em;
+  margin-bottom: -0.1em;
+}
+
+a {
+  color: #0973ba;
+  text-decoration: none;
 }
 
 @media screen and (min-width: 40.5em) {
