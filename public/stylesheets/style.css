@@ -30,7 +30,8 @@ body {
 }
 
 p {
-  margin:1em 0;
+  margin: 1em 0em;
+  max-width: 99%;
 }
 
 .parallax-image-wrapper {
@@ -188,7 +189,22 @@ a {
   text-decoration: none;
 }
 
+h3 {
+  color: #0973ba;
+  margin: 1em 0em;
+
+}
+
 @media screen and (min-width: 40.5em) {
+
+  h3 {
+    margin-left: 5%;
+  }
+
+  p {
+    margin: 1em 5%;
+    max-width: 90%;
+  }
 
   #logo {
     background-image: url('../images/logo.png');
