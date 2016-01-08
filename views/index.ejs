@@ -1,5 +1,23 @@
 <% include partials/header %>
+<style>
+    body {
+    background-image:url(images/british_columbia.jpg)
+    }
 
+.value_prop {
+  text-align: center;
+}
+
+    .belly_band {
+     text-align: center;
+     position: absolute;
+     top: 40%;
+     width: 100%;
+     color: #fff;
+
+     background-color: transparent;
+    }
+</style>
 <div
   class="parallax-image-wrapper parallax-image-wrapper-100"
   data-anchor-target="#cloud_removal + .gap"
@@ -7,7 +25,6 @@
   data-top-bottom="transform:translate3d(0px, 0%, 0px)">
   <div
     class="parallax-image parallax-image-100"
-    style="background-image:url(images/british_columbia.jpg)"
     data-anchor-target="#cloud_removal + .gap"
     data-bottom-top="transform: translate3d(0px, -80%, 0px);"
     data-top-bottom="transform: translate3d(0px, 80%, 0px);"
@@ -16,19 +33,17 @@
 </div>
 
 <div id="skrollr-body">
-  <div class="header" id="cloud_removal" style="">
-    <p>
-    Pacific Geomatics is a leading provider of high‑quality imagery products and services.
-    </p>
+  <div class="belly_band" id="cloud_removal" style="">
+    <h1 class="value_prop">
+      Geographic data for better decisions</h1>
+    <p>Pacific Geomatics creates the clean, accurate geographic datasets
+    that drive cutting-edge applications and inform decision-makers.</p>
   </div>
+
   <div class="gap gap-100"></div>
   <div class="footer">
     <p>© Copyright 2015 Pacific Geomatics Ltd.</p>
   </div>
 </div>
 
-<script type="text/javascript" src="javascripts/skrollr.min.js"></script>
-<script type="text/javascript">
-  skrollr.init({ smoothScrolling: false, mobileDeceleration: 0.004 });
-</script>
 <% include partials/footer %>
