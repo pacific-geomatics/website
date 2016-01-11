@@ -5,14 +5,16 @@ import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 import routes from './routes';
+import exphbs from 'express-handlebars';
 
 let app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 
-// set the view engine to ejs
-app.set('view engine', 'ejs');
+app.engine('.hbs', exphbs({defaultLayout: 'application', extname: '.hbs'}));
+app.set('view engine', '.hbs');
+
 
 // uncomment after placing your favicon in /public
 //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
