@@ -9,3 +9,7 @@ exports.simulation = (req, res, next) => {
 exports.contact = (req, res, next) => {
   res.render('contact', { title: 'Express' });
 };
+
+exports.nmso = (req, res, next) => {
+  res.render('nmso', { title: 'Express' });
+};

@@ -22,6 +22,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/nmso', routes.nmso);
 app.use('/simulation', routes.simulation);
 app.use('/contact', routes.contact);
 app.use('/', routes.index);
