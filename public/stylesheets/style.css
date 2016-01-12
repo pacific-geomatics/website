@@ -23,6 +23,10 @@ html, body {
   height:100% !important;
 }
 
+.container {
+  display: table;
+}
+
 body {
   font-size: 1.4em;
   color: #989898;

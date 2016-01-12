@@ -1,46 +1,41 @@
 <style>
-    body {
-    background-image:url(images/british_columbia.jpg)
-    }
 
-.value_prop {
-  text-align: center;
-}
+  body {
+    background-image:url(images/british_columbia.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center 0em;
+    display:table;
+    width:100%;
+  }
 
-    .belly_band {
-     text-align: center;
-     position: absolute;
-     top: 40%;
-     width: 100%;
-     color: #fff;
+  .value_prop {
+    text-align: center;
+  }
 
-     background-color: transparent;
-    }
+  .belly_band {
+    color: #fff;
+    background-color: transparent;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    margin: 3em 0em;
+  }
+
+
+  .footer {
+    display:table-row;
+    height: 1px;
+  }
+
 </style>
-<div
-  class="parallax-image-wrapper parallax-image-wrapper-100"
-  data-anchor-target="#cloud_removal + .gap"
-  data-bottom-top="transform:translate3d(0px, 200%, 0px)"
-  data-top-bottom="transform:translate3d(0px, 0%, 0px)">
-  <div
-    class="parallax-image parallax-image-100"
-    data-anchor-target="#cloud_removal + .gap"
-    data-bottom-top="transform: translate3d(0px, -80%, 0px);"
-    data-top-bottom="transform: translate3d(0px, 80%, 0px);"
-    ></div>
-  <!--the +/-80% translation can be adjusted to control the speed difference of the image-->
-</div>
 
-<div id="skrollr-body">
-  <div class="belly_band" id="cloud_removal" style="">
-    <h1 class="value_prop">
-      Geographic data for better decisions</h1>
-    <p>Pacific Geomatics creates the clean, accurate geographic datasets
-      that drive cutting-edge applications and inform decision-makers.</p>
-  </div>
-
-  <div class="gap gap-100"></div>
-  <div class="footer">
-    <p>© Copyright 2015 Pacific Geomatics Ltd.</p>
-  </div>
+<div class="belly_band">
+  <h1 class="value_prop">
+    Geographic data for better decisions</h1>
+  <p>Pacific Geomatics creates the clean, accurate geographic datasets
+    that drive cutting-edge applications and inform decision-makers.</p>
 </div>
+{{>footer}}
