@@ -10,11 +10,6 @@
     font-style: normal;
 }
 
-* {
-  padding:0;
-  margin:0;
-}
-
 html, body {
   height:100%;
 }
@@ -28,6 +23,7 @@ html, body {
 }
 
 body {
+  margin: 0;
   font-size: 1.4em;
   color: #989898;
   font-family: 'robotoregular', sans-serif;
@@ -200,10 +196,16 @@ h3 {
 }
 
 .nmso {
-  margin-top: 5em;
+  margin: 3em 1em 3em 1em;
 }
 
 @media screen and (min-width: 40.5em) {
+
+  .nmso {
+    margin: 5em 1em;
+    max-width: 90%;
+    margin-top: 5em;
+  }
 
   h3 {
     margin-left: 5%;
