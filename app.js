@@ -24,10 +24,11 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use('/remote_sensing', routes.remote_sensing);
 app.use('/nmso', routes.nmso);
 app.use('/simulation', routes.simulation);
 app.use('/contact', routes.contact);
-app.use('/', routes.index);
+app.use(/^\/$/, routes.index); // regex for the / route
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
@@ -40,7 +41,7 @@ app.use(function(req, res, next) {
 
 // development error handler
 // will print stacktrace
-if (app.get('env') === 'development') {
+if (app.get('env') === 'development' || app.get('env') === 'test') {
   app.use((err, req, res, next) => {
     res.status(err.status || 500);
     res.render('error', {
