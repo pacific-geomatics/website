@@ -228,28 +228,38 @@ h3 {
     float: left;
   }
 
+  nav {
+    width:40%;
+  }
+
+  #menu {
+    text-align: right;
+  }
+
   nav > a {
     display: inline-block;
-    float: left;
-    width: 14%;
-    padding-top:1.2em;
+    padding-top:1.5em 0.5em 0em 0em;
     font-size: 1em;
     color: #0973ba;
     font-weight: bold;
     text-decoration: none;
-    text-align: center;
     cursor: pointer;
-    -webkit-transition: all 0.1s; /* Safari 3.1 to 6.0 */
-    transition: all 0.1s;
   }
 
   nav > a:hover {
-    color: #0973ba;
-    padding-bottom:0.5em;
-    border-bottom-right-radius: 0.5em;
-    border-bottom-left-radius: 0.5em;
-    border-top: 4px solid #b5b5b6;
+    margin-top:-0.25em;
+    border-top: 0.25em solid #b5b5b6;
     text-decoration: none;
+  }
+
+  .pull_left {
+    margin-left: 2em;
+    float: left;
+  }
+
+  .pull_right {
+    margin-right: 2em;
+    float: right;
   }
 
 }
