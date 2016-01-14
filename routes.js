@@ -13,3 +13,7 @@ exports.contact = (req, res, next) => {
 exports.nmso = (req, res, next) => {
   res.render('nmso', { title: 'Express' });
 };
+
+exports.remote_sensing = (req, res, next) => {
+  res.render('remote_sensing', { title: 'Express' });
+};

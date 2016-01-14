@@ -46,3 +46,12 @@ describe('GET /foo', () => {
     .end(done);
   })
 });
+
+describe('GET /remote_sensing', () => {
+  it('serves the remote sensing page', (done) => {
+    request(app)
+    .get('/remote_sensing')
+    .expect(200, /<h3>Remote Sensing<\/h3>/)
+    .end(done);
+  })
+});
