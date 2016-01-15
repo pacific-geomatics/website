@@ -257,6 +257,10 @@ h3 {
 
 @media screen and (min-width: 40.5em) {
 
+  header {
+    background-color: transparent;
+  }
+
   .nmso {
     margin: 5em 1em;
     max-width: 90%;
