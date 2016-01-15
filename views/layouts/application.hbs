@@ -7,16 +7,63 @@
     <link rel='stylesheet' href='/stylesheets/style.css' media="screen" />
   </head>
   <body>
-    <div id="menu">
-      <div id="logo" class="pull_left"></div>
-      <nav class="pull_right">
-        <a href="/">Home</a>
-        <a href="/simulation">Simulation</a>
-        <a href="/remote_sensing">Remote Sensing</a>
-        <a href="/contact">Contact</a>
-        <a href="/nmso">NMSO</a>
-      </nav>
-    </div>
-  {{{body}}}
-</body>
+    <header>
+      <div id="menu">
+        <div id="logo" class="pull_left"></div>
+        <nav class="pull_right">
+          <a href="/">Home</a>
+          <a href="/simulation">Simulation</a>
+          <a href="/remote_sensing">Remote Sensing</a>
+          <a href="/contact">Contact</a>
+          <a href="/nmso">NMSO</a>
+        </nav>
+      </div>
+      <div id="small_menu">
+        <a id="burger">&equiv;</a>
+        <div id="logo" class=""></div>
+        <nav id="small_nav" class="inactive">
+          <a id="close">&#10005;</a>
+          <ul>
+            <li>
+              <a href="/">Home</a>
+            </li>
+            <li>
+              <a href="/simulation">Simulation</a>
+            </li>
+            <li>
+              <a href="/remote_sensing">Remote Sensing</a>
+            </li>
+            <li>
+              <a href="/contact">Contact</a>
+            </li>
+            <li>
+              <a href="/nmso">NMSO</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    {{{body}}}
+    <script>
+      document.addEventListener('DOMContentLoaded', function(){
+
+        var hamburgerIcon = document.querySelector('#burger')
+        var smallNavMenu = document.querySelector('#small_nav')
+        var closeButton = document.querySelector('#close')
+
+        var toggle_menu = function() {
+          if(smallNavMenu.className === "inactive"){
+            smallNavMenu.className = "active"
+          } else {
+            smallNavMenu.className = "inactive"
+          }
+        }
+
+        hamburgerIcon.addEventListener('click', toggle_menu)
+
+        closeButton.addEventListener('click', toggle_menu)
+
+      })
+    </script>
+  </body>
 </html>
