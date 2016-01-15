@@ -304,8 +304,8 @@ h3 {
   }
 
   nav > a {
+    padding-top: 1em;
     display: inline-block;
-    padding-top:1.5em 0.5em 0em 0em;
     font-size: 1em;
     color: #0973ba;
     font-weight: bold;
