@@ -1,3 +1,7 @@
+exports.data_services = (req, res, next) => {
+  res.render('data_services', { title: 'Express' });
+};
+
 exports.index = (req, res, next) => {
   res.render('index', { title: 'Express' });
 };

@@ -25,6 +25,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/remote_sensing', routes.remote_sensing);
+app.use('/data_services', routes.data_services);
 app.use('/nmso', routes.nmso);
 app.use('/simulation', routes.simulation);
 app.use('/contact', routes.contact);
